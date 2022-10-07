@@ -38,7 +38,6 @@ function changeModal(head, body = '') {
 // Requests // Requests // Requests
 
 function sendSlang() {
-    if(document.getElementById('passtoforadmin').value == '5511') {
         let name = document.getElementById('name').value;
     let description = document.getElementById('description').value;
     let validation = sendValidation(name, description);
@@ -74,7 +73,6 @@ function sendSlang() {
         }
     } else {
         renderValidationErrors(validation)
-    }
     }
 }
 async function loadSlangs() {
